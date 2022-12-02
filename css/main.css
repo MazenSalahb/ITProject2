@@ -197,11 +197,32 @@ body {
     }
 }
 
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    background-color: rgb(228, 228, 228);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.up img{
+    width: 20px;
+    
+}
+.up.show{
+    right: 10px;
+    transition: 0.2s;
+}
+
 /* Custom ScrollBar */
 :root {
-    --shadow: #42838f;
+    --shadow: #e2e2e2;
     --scrollbarBG: #eee;
-    --thumbBG: #51abba;
+    --thumbBG: #ffffff;
 }
 
 ::-webkit-scrollbar {
