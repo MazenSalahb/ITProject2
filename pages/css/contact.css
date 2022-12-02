@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Janna;
+    src: url(../../fonts/Janna\ LT\ Bold.ttf);
+}
+
+@font-face {
+    font-family: heca;
+    src: url(../../fonts/Hacen-Liner-Screen.ttf);
+}
+
+@font-face {
+    font-family: din;
+    src: url(../../fonts/din-next-lt-w23-bold.ttf)
+}
+
+
+.FormContainer {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 60px rgb(185, 185, 185, .5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.FormContainer form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    text-align: center;
+    transform: scale(1.2);
+}
+
+.inputs-feids {
+    display: block;
+    margin: 5px;
+}
+
+.field {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 8px;
+    outline-color: #51abba;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: 1px solid #767676;
+    font-family: Janna;
+}
+
+.field:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MessageField {
+    display: block;
+    margin: 10px;
+}
+
+.textarea {
+    outline-color: #65bbca;
+    transition: 0.5s;
+    font-family: din;
+    height: 130px;
+    resize: none;
+}
+
+.textarea:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.textarea:focus {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.button {
+    background-color: #51abba;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Janna;
+}
+
+.button:hover {
+    background-color: #65bbca;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:850px) {
+    .FormContainer form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FormContainer {
+        width: 90%;
+    }
+}

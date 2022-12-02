@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Janna;
+    src: url(../fonts/Janna\ LT\ Bold.ttf);
+}
+
+@font-face {
+    font-family: heca;
+    src: url(../fonts/Hacen-Liner-Screen.ttf);
+}
+
+@font-face {
+    font-family: din;
+    src: url(../fonts/din-next-lt-w23-bold.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Janna;
+    background-color: #fafcff;
+    direction: rtl;
+}
+
+.navbar {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    min-height: 70px;
+    flex-direction: row;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 0px 60px rgb(185, 185, 185, .5);
+    background-color: #fff;
+}
+
+.rightnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLogo img {
+    padding-right: 30px;
+    transition: 0.5s;
+}
+
+.navLogo img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #575757;
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.navbar ul a:hover {
+    background-color: rgb(236, 236, 236);
+    transition: 0.5s;
+}
+
+.signin {
+    margin-left: 20px;
+}
+
+.signin a {
+    margin: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #51abba;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.signin .sign-in:hover {
+    background-color: #69cddf;
+    transition: 0.5s;
+}
+
+.signin .signUp {
+    background-color: #fff;
+    color: #51abba;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.signin .signUp:hover {
+    background-color: rgb(236, 236, 236);
+    transition: 0.5s;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    height: 60%;
+    margin-top: 100px;
+    padding: 20px;
+    font-family: din;
+    color: #0e2c4b;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.righside h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+
+}
+
+.righside h3 {
+    line-height: 200%;
+    margin-bottom: 60px;
+}
+
+.righside a {
+    padding: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #51abba;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.righside a:hover {
+    background-color: #69cddf;
+    transition: 0.5s;
+}
+
+.leftside img {
+    max-width: 800px;
+    transition: 0.5s;
+}
+
+.leftside img:hover {
+    transform: scale(105%);
+    transition: 0.5s;
+}
+
+@media screen and (max-width:850px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .leftside img {
+        max-width: 400px;
+        transition: 0.5s;
+        display: none;
+    }
+
+    .rightnav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* Custom ScrollBar */
+:root {
+    --shadow: #42838f;
+    --scrollbarBG: #eee;
+    --thumbBG: #51abba;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px rgb(165, 165, 165);
+}
