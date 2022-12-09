@@ -46,12 +46,20 @@
                 <h2 style="margin-bottom:30px; color:#51abba;">إنشاء حساب</h2>
                 <form action="">
                     <label for="email">البريد الالكتروني</label>
-                    <input type="email" name="email" id="email" class="inputField" placeholder="البريد الالكتروني" required>
+                    <input type="email" name="email" id="email" class="inputField" placeholder="البريد الالكتروني"
+                        required>
                     <label for="username">الاسم</label>
                     <input type="text" id="username" class="inputField" placeholder="اسم المستخدم" required>
                     <label for="passowrd">كلمة السر</label>
                     <input type="password" name="passowrd" id="passowrd" class="inputField" placeholder="كلمة السر"
                         required>
+                    <div class="selectGender">
+                        <label for="gender">الجنس:</label>
+                        <select name="gender" id="gender" class="select-items">
+                            <option value="volvo">ذكر</option>
+                            <option value="saab">انثى</option>
+                        </select>
+                    </div>
                     <button type="submit" class="loginbutton">إنشاء حساب</button>
                 </form>
                 <p style="margin-top:10px;">لديك حساب ؟<a href="login.html">سجل دخول هنا</a></p>

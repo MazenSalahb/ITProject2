@@ -40,6 +40,8 @@ body {
     background-color: #fff;
 }
 
+
+
 .rightnav {
     display: flex;
     justify-content: center;
@@ -63,6 +65,7 @@ body {
     display: flex;
 }
 
+
 .navbar ul a {
     text-decoration: none;
     color: #575757;
@@ -73,10 +76,14 @@ body {
     transition: 0.5s;
 }
 
+
+
 .navbar ul a:hover {
     background-color: rgb(236, 236, 236);
     transition: 0.5s;
 }
+
+
 
 .signin {
     margin-left: 20px;
@@ -209,11 +216,13 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
-.up img{
+
+.up img {
     width: 20px;
-    
+
 }
-.up.show{
+
+.up.show {
     right: 10px;
     transition: 0.2s;
 }
