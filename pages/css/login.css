@@ -73,7 +73,9 @@
     padding: 0px 5px;
     margin-bottom: 20px;
     outline: none;
+    cursor: pointer;
 }
+
 .saveLogin{
     display: flex;
     align-items: center;
